@@ -1,0 +1,14 @@
+.styled-icon-orange path {
+  fill: orange; /* Örnek bir renk */
+  stroke: orange;
+}
+
+.styled-icon-black path {
+  fill: black; /* Örnek bir renk */
+  stroke: black;
+}
+
+.styled-icon-white path {
+  fill: white; /* Örnek bir renk */
+  stroke: white;
+}

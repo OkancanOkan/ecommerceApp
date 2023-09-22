@@ -1,0 +1,52 @@
+.styled-button {
+  padding-inline: 10px;
+  border-radius: 2px;
+  border: solid 1px black;
+  cursor: pointer;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 110px;
+}
+
+.styled-button.maxWidth {
+  width: 100%;
+}
+
+.styled-button.colour-white {
+  color: white;
+}
+
+.styled-button.colour-black {
+  color: black;
+}
+
+.styled-button.variant-black {
+  background-color: black;
+}
+
+.styled-button.variant-white {
+  background-color: white;
+}
+
+.styled-button.size-small {
+  font-weight: 500;
+  height: 32px;
+}
+
+.styled-button.size-medium {
+  height: 40px;
+  font-weight: 600;
+}
+
+.styled-button.size-large {
+  height: 48px;
+  font-weight: 700;
+}
+
+.styled-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

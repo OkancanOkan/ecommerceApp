@@ -1,0 +1,20 @@
+.styled-counterButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: solid #cdcdcd 1px;
+  border-radius: 1px;
+  height: 40px;
+  width: 100px;
+}
+
+.styled-counterButton-increment {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+}
+.styled-counterButton-decrement {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+}

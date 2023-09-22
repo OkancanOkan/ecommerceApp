@@ -1,0 +1,23 @@
+import React from "react";
+import "../text/text.css";
+
+interface TextProps {
+  children: JSX.Element | JSX.Element[];
+  size: "xxs" | "xs" | "s" | "sm" | "m" | "ml" | "l" | "xl" | "xxl";
+  colour: "black" | "white" | "orange" | "red" | "grey";
+  bold: boolean;
+}
+
+const Text: React.FC<TextProps> = ({ children, size, colour, bold }) => {
+  return (
+    <span
+      className={`styled-text ${
+        bold ? "bold" : "normal"
+      } colour-${colour} size-${size}`}
+    >
+      {children}
+    </span>
+  );
+};
+
+export default Text;

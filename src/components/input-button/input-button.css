@@ -1,0 +1,50 @@
+.styled-inputButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.styled-inputButton-input {
+  font-weight: 500;
+  color: #b5bac3;
+  height: 54px;
+  padding-left: 10px;
+  width: 50%;
+  border: none;
+  background-color: rgb(244 245 247);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.styled-inputButton-button {
+  padding-inline: 10px;
+  border: solid 1px black;
+  cursor: pointer;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 110px;
+  font-weight: 500;
+  height: 58px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.styled-inputButton-button.colour-white {
+  color: white;
+}
+
+.styled-inputButton-button.colour-black {
+  color: black;
+}
+
+.styled-inputButton-button.variant-black {
+  background-color: black;
+}
+
+.styled-inputButton-button.variant-white {
+  background-color: white;
+}

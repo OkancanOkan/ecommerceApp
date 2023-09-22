@@ -1,0 +1,14 @@
+.styled-input {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.styled-input-form {
+  border: solid #cdcdcd 1px;
+  border-radius: 1px;
+  font-size: 14px;
+  color: #b5bac3;
+  height: 30px;
+  padding-left: 10px;
+  width: 100%;
+}
