@@ -1,0 +1,33 @@
+.styled-inputIcon {
+  display: inline-flex;
+  flex-direction: row;
+  border-bottom: solid 1px black;
+  border-color: rgba(0, 0, 0, 0.25);
+  width: 50%;
+}
+
+.styled-inputIcon-input {
+  border: 0 solid #e5e7eb;
+  border-radius: 1px;
+  border-bottom-width: 1px;
+  font-size: 14px;
+  color: #b5bac3;
+  height: 30px;
+  padding: 10px 35px 10px 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.styled-inputIcon-icon {
+  border: 0 solid #e5e7eb;
+}
+
+.styled-inputIcon-button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

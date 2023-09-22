@@ -1,34 +1,31 @@
 import React from 'react';
+import './textArea.css';
 
 interface TextAreaProps {
   placeholder?: string;
-  label?: string;
   value: string;
-  name?: string;
   maxWidth?: boolean;
   height?: number;
+  width?: number;
   onChange: () => void;
   backgroundColor?: 'white' | 'gray';
 }
 const TextArea: React.FC<TextAreaProps> = ({
   placeholder,
-  label,
   value,
-  name,
   height = 150,
+  width = 350,
   maxWidth = false,
   onChange,
   backgroundColor = 'white',
 }) => {
   return (
     <div className={`styled-textArea ${maxWidth ? 'maxWidth' : ''}`}>
-      {label && <label className="styled-textArea-label">{label}</label>}
       <textarea
         className={`styled-textArea-form backgroundColor-${backgroundColor}`}
-        style={{ height }}
+        style={{ height: height, width: width }}
         placeholder={placeholder}
         value={value}
-        name={name}
         onChange={onChange}
       ></textarea>
     </div>
