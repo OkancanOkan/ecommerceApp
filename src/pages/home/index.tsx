@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from '../../components/container';
-import TitleLine from '../../components/title-line';
-import Dropdown from '../../components/dropdown';
+import Rating from '../../components/rating';
 
 const Home = () => {
+  const [rating, setRating] = useState<number>(2); // Başlangıç değeri
+
+  const handleRatingChange = (newRating: number) => {
+    setRating(newRating);
+  };
   return (
     <Container>
       <div>
         <h1>Home page </h1>
-        <Dropdown options={['Default', 'ulaş']} onSelect={() => {}} />
+        <Rating initialValue={rating} onChange={handleRatingChange} max={5} />
       </div>
     </Container>
   );

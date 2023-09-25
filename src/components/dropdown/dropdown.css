@@ -50,3 +50,7 @@
 .styled-dropdown-options li:hover {
   background-color: #e0e0e0;
 }
+
+.styled-dropdown-header-arrow {
+  margin-left: 15px;
+}
