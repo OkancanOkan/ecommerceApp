@@ -1,0 +1,29 @@
+.styled-iconLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.styled-iconLabel-icon {
+  display: block;
+  vertical-align: middle;
+}
+
+.styled-iconLabel-span {
+  margin-left: 10px;
+}
+
+.styled-iconLabel-orange path {
+  fill: orange; /* Örnek bir renk */
+  stroke: orange;
+}
+
+.styled-iconLabel-black path {
+  fill: black; /* Örnek bir renk */
+  stroke: black;
+}
+
+.styled-iconLabel-white path {
+  fill: white; /* Örnek bir renk */
+  stroke: white;
+}
