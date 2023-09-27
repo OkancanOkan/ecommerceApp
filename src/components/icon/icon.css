@@ -1,3 +1,8 @@
+.styled-icon-button {
+  border: none;
+  background-color: white;
+}
+
 .styled-icon-orange path {
   fill: orange; /* Örnek bir renk */
   stroke: orange;

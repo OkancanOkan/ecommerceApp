@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import Container from '../../components/container';
-import Rating from '../../components/rating';
+import Navbar from '../../components/navbar';
+import iconShopping from '../../assets/icons/shopping.svg';
+import IconTitleSubtitle from '../../components/icon-title-subtitle';
 
 const Home = () => {
-  const [rating, setRating] = useState<number>(2); // Başlangıç değeri
-
-  const handleRatingChange = (newRating: number) => {
-    setRating(newRating);
-  };
   return (
     <Container>
-      <div>
-        <h1>Home page </h1>
-        <Rating initialValue={rating} onChange={handleRatingChange} max={5} />
-      </div>
+      <Navbar />
+      <IconTitleSubtitle
+        title="Shop Online"
+        subtitle="There are many variants of your online shopping "
+        icon={iconShopping}
+      />
     </Container>
   );
 };

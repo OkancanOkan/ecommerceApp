@@ -7,6 +7,7 @@ interface IconLabelProps {
   variant?: 'orange' | 'black' | 'white';
   text?: string;
 }
+
 const IconLabel: React.FC<IconLabelProps> = ({
   size = 50,
   variant = 'black',

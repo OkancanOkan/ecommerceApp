@@ -1,0 +1,73 @@
+.styled-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.styled-navbar-iconGoup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.styled-navbar-iconGroup-hamburger {
+  border: none;
+  background-color: white;
+}
+
+.styled-navbar-iconGroup-hamburger-button {
+  border: none;
+  background-color: white;
+}
+.styled-navbar-iconGroup-hamburger-menü::before {
+  pointer-events: auto;
+  content: var(--tw-content);
+  opacity: 0.7;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+}
+.styled-navbar-iconGroup-hamburger-menü {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out, z-index 0s linear 0.3s;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 420px;
+}
+
+.styled-navbar-iconGroup-hamburger-menü.open::before {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 50;
+  height: 100%;
+  width: calc(100% - 15px);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 45px 40px 100px;
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+}
+
+.styled-navbar-iconGroup-hamburger-menü-inner {
+  font-size: 32px;
+  cursor: pointer;
+  text-transform: none;
+  margin: 15px;
+}

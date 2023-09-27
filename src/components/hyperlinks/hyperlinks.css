@@ -1,0 +1,11 @@
+.styled-hyperlinks-link {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.41;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
