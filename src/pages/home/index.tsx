@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import Container from '../../components/container';
 import Navbar from '../../components/navbar';
-import iconShopping from '../../assets/icons/shopping.svg';
-import IconTitleSubtitle from '../../components/icon-title-subtitle';
+import Accordion from '../../components/accordion';
 
 const Home = () => {
   return (
     <Container>
       <Navbar />
-      <IconTitleSubtitle
-        title="Shop Online"
-        subtitle="There are many variants of your online shopping "
-        icon={iconShopping}
-      />
+      <Accordion title="Birinci Başlık">
+        <p>Birinci başlık içeriği burada.</p>
+      </Accordion>
     </Container>
   );
 };

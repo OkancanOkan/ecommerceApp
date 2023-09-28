@@ -23,7 +23,7 @@ const IconTitleSubtitle: React.FC<IconTitleSubtitleProps> = ({
           style={{ width: size }}
           src={icon}
           alt="icon"
-          className={`styled-iconTitleSubtitle-icon-${variant}`}
+          className="styled-iconTitleSubtitle-icon"
         />
         <span className="styled-iconTitleSubtitle-span">{title}</span>
       </div>

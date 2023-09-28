@@ -31,18 +31,3 @@
   align-items: flex-start;
   display: flex;
 }
-
-.styled-iconTitleSubtitle-orange path {
-  fill: orange;
-  stroke: orange;
-}
-
-.styled-iconTitleSubtitle-black path {
-  fill: black;
-  stroke: black;
-}
-
-.styled-iconTitleSubtitle-white path {
-  fill: white;
-  stroke: white;
-}
