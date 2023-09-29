@@ -1,0 +1,37 @@
+.styled-timer {
+  display: flex;
+  text-align: center;
+}
+
+.styled-timer-clock {
+  margin-right: 80px;
+  text-align: center;
+}
+
+.styled-timer-number-header {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  font-size: 48px;
+  position: relative;
+  font-weight: 500;
+  line-height: 1.41;
+  margin: 0;
+  font-family: 'Prata', serif;
+}
+
+.styled-timer-number-header::after {
+  position: absolute;
+  content: var(--tw-content);
+  --tw-content: ':';
+  right: -42.5px;
+  font-size: 48px;
+  --tw-translate-y: -50%;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.styled-timer-number-span {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
