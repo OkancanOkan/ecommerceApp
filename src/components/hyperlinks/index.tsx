@@ -2,8 +2,8 @@ import React from 'react';
 import './hyperlinks.css';
 
 interface HyperlinksProps {
-  path?: string;
-  text?: string;
+  path: string;
+  text: string;
 }
 
 const Hyperlinks: React.FC<HyperlinksProps> = ({ text, path }) => {

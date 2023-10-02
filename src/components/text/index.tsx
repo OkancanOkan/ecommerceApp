@@ -5,10 +5,15 @@ interface TextProps {
   children?: React.ReactNode;
   size: 'xxs' | 'xs' | 's' | 'sm' | 'm' | 'ml' | 'l' | 'xl' | 'xxl';
   colour: 'black' | 'white' | 'orange' | 'red' | 'grey';
-  bold: boolean;
+  bold?: boolean;
 }
 
-const Text: React.FC<TextProps> = ({ children, size, colour, bold }) => {
+const Text: React.FC<TextProps> = ({
+  children,
+  size,
+  colour,
+  bold = false,
+}) => {
   return (
     <span
       className={`styled-text ${

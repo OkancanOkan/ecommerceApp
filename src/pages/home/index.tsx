@@ -1,25 +1,20 @@
 import React, { useState } from 'react';
 import Container from '../../components/container';
 import Navbar from '../../components/navbar';
-import Accordion from '../../components/accordion';
 import Timer from '../../components/timer';
-import ProgressBar from '../../components/progressBar';
-import TitleSubtitle from '../../components/title-subtitle';
-import Breadcrumb from '../../components/breadcrumb';
-import TabCollapse from '../../components/tab-collapse';
+import Footer from '../../components/footer';
 
 const Home = () => {
   const targetDate = new Date('2024-09-29T00:00:00');
 
-  const tabs = [
-    { label: 'Sekme 1', status: 'Aktif' },
-    { label: 'Sekme 2', status: 'Pasif' },
-    { label: 'Sekme 3', status: 'Beklemede' },
-  ];
+  // const tabs = [
+  //   { label: 'Sekme 1', status: 'Aktif' },
+  //   { label: 'Sekme 2', status: 'Pasif' },
+  //   { label: 'Sekme 3', status: 'Beklemede' },
+  // ];
 
-  const [activeTab, setActiveTab] = useState<number | null>(null);
+  // const [activeTab, setActiveTab] = useState<number | null>(null);
 
-  <TabCollapse data={tabs} active={activeTab} setActive={setActiveTab} />;
   return (
     <Container>
       <Navbar />
@@ -50,13 +45,14 @@ const Home = () => {
         }
         title={'Frequently Question'}
       /> */}
-      <Breadcrumb
+      {/* <Breadcrumb
         items={[
           { label: 'Anasayfa', link: '/' },
           { label: 'Home', link: '/Home' },
         ]}
       />
-      <TabCollapse data={tabs} active={activeTab} setActive={setActiveTab} />
+      <TabCollapse data={tabs} active={activeTab} setActive={setActiveTab} /> */}
+      <Footer />
     </Container>
   );
 };
