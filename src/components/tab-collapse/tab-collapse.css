@@ -1,0 +1,25 @@
+.styled-tabCollapse {
+  display: flex;
+  list-style: none;
+  padding-bottom: 20px;
+  --tw-border-opacity: 1;
+  border-color: rgb(221 221 221 / var(--tw-border-opacity));
+  border-bottom-width: 1px;
+}
+
+.styled-tabCollapse-item {
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  position: relative;
+  font-weight: 500;
+}
+
+.styled-tabCollapse-item::after {
+  padding-left: 20px;
+  padding-right: 20px;
+  --tw-content: '/';
+  content: var(--tw-content);
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+.styled-breadcrumb {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-size: 14px;
+  list-style: none;
+}
+
+.styled-breadcrumb-item {
+  position: relative;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.styled-breadcrumb-item a {
+  font-weight: 500;
+  line-height: 1.41;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+.styled-breadcrumb-item a::after {
+  --tw-content: '/';
+  content: var(--tw-content);
+  padding-right: 15px;
+  margin-left: 15px;
+}
+
+.styled-breadcrumb-item span {
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity));
+  font-weight: 500;
+}
