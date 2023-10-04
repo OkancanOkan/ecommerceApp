@@ -54,10 +54,11 @@
   width: 45px;
   height: 45px;
   margin-right: 15px;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   border-radius: 9999px;
+  background-color: white;
   background-image: none;
   -webkit-appearance: button;
+  border: none;
   text-transform: none;
   cursor: pointer;
   position: absolute;
