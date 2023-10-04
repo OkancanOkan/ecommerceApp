@@ -1,0 +1,71 @@
+.styled-tableCardItem {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border: 0 solid #e5e7eb;
+  border-bottom-width: 1px;
+  height: 107px;
+}
+
+.styled-tableCardItem-leftGroup {
+  display: flex;
+  align-items: center;
+  padding: 25px 1rem 1rem 1px;
+}
+
+.styled-tableCardItem-img {
+  margin-right: 26px;
+}
+
+.styled-tableCardItem-productName {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.41;
+  color: black;
+}
+
+.styled-tableCardItem-rightGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 25px 1rem 1rem 1px;
+}
+
+.styled-tableCardItem-price {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: auto;
+  padding: 20px;
+  margin-right: 70px;
+}
+
+.styled-tableCardItem-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 35px;
+}
+
+.styled-tableCardItem-total {
+  width: 217px;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 20px;
+}
+
+.styled-tableCardItem-cancel {
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+}

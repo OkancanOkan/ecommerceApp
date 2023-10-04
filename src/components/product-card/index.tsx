@@ -74,31 +74,56 @@ const ProductCard: React.FC<ProductCardProps> = ({
             </svg>
           </button>
 
-          <button className="styled-product-card-image-button">
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 512 512"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="32"
-                d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zm80 0v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"
-              ></path>
-              <path
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="32"
-                d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16"
-              ></path>
-            </svg>
+          <button
+            className={`styled-product-card-image-button ${
+              outOfStock ? 'disabled' : ''
+            }`}
+          >
+            {discount ? (
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M435.25 48h-122.9a14.46 14.46 0 00-10.2 4.2L56.45 297.9a28.85 28.85 0 000 40.7l117 117a28.85 28.85 0 0040.7 0L459.75 210a14.46 14.46 0 004.2-10.2v-123a28.66 28.66 0 00-28.7-28.8z"
+                ></path>
+                <path d="M384 160a32 32 0 1132-32 32 32 0 01-32 32z"></path>
+              </svg>
+            ) : (
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zm80 0v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"
+                ></path>
+                <path
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16"
+                ></path>
+              </svg>
+            )}
           </button>
 
           <button className="styled-product-card-image-button">

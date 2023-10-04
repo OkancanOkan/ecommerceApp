@@ -1,0 +1,5 @@
+.styled-home-page-product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -3,6 +3,8 @@ import Container from '../../components/container';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import ProductCard from '../../components/product-card';
+import './home.css';
+import TableCardItem from '../../components/table-card-item';
 
 const Home = () => {
   // const targetDate = new Date('2024-09-29T00:00:00');
@@ -52,14 +54,46 @@ const Home = () => {
         ]}
       />
       <TabCollapse data={tabs} active={activeTab} setActive={setActiveTab} /> */}
-      <ProductCard
-        imgSrc="https://helendo.jamstacktemplates.dev/images/products/art-deco-home/300x300.jpg"
-        name="Art Deco Home"
-        namePath=""
-        price="55.00"
-        imagePath={''}
-        discount={10}
-        outOfStock
+      <div className="styled-home-page-product">
+        <ProductCard
+          imgSrc="https://helendo.jamstacktemplates.dev/images/products/animi-dolor-pariatur/300x300.jpg"
+          name="Animi Dolar Pariatur"
+          namePath=""
+          price="10.00"
+          imagePath=""
+        />
+        <ProductCard
+          imgSrc="https://helendo.jamstacktemplates.dev/images/products/art-deco-home/300x300.jpg"
+          name="Art Deco Home"
+          namePath=""
+          price="30.00"
+          imagePath={''}
+        />
+        <ProductCard
+          imgSrc="https://helendo.jamstacktemplates.dev/images/products/artificial-potted-plant/300x300.jpg"
+          name="Artificial potted plant"
+          namePath=""
+          price="40.00"
+          imagePath={''}
+          outOfStock
+        />
+        <ProductCard
+          imgSrc="https://helendo.jamstacktemplates.dev/images/products/dark-green-jug/300x300.jpg"
+          name="Dark Green Jug"
+          namePath=""
+          price="19.00"
+          imagePath={''}
+          discount={10}
+        />
+      </div>
+      <TableCardItem
+        imgHeight={75}
+        imgWidth={75}
+        imgSrc="https://helendo.jamstacktemplates.dev/images/products/dark-green-jug/74x74.jpg"
+        productName="Dark Green Jug"
+        price="30.00"
+        quantity={1}
+        total="30.00"
       />
       <Footer />
     </Container>
