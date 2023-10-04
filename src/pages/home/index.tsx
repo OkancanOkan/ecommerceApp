@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Container from '../../components/container';
 import Navbar from '../../components/navbar';
-import Timer from '../../components/timer';
 import Footer from '../../components/footer';
+import ProductCard from '../../components/product-card';
 
 const Home = () => {
-  const targetDate = new Date('2024-09-29T00:00:00');
+  // const targetDate = new Date('2024-09-29T00:00:00');
 
   // const tabs = [
   //   { label: 'Sekme 1', status: 'Aktif' },
@@ -34,7 +34,7 @@ const Home = () => {
           technology to transform your business.
         </p>
       </Accordion> */}
-      <Timer targetDate={targetDate} />
+      {/* <Timer targetDate={targetDate} /> */}
       {/* <ProgressBar label={'Creativity'} percent={50} />
       <TitleSubtitle
         children={
@@ -52,6 +52,15 @@ const Home = () => {
         ]}
       />
       <TabCollapse data={tabs} active={activeTab} setActive={setActiveTab} /> */}
+      <ProductCard
+        imgSrc="https://helendo.jamstacktemplates.dev/images/products/art-deco-home/300x300.jpg"
+        name="Art Deco Home"
+        namePath=""
+        price="55.00"
+        imagePath={''}
+        discount={10}
+        outOfStock
+      />
       <Footer />
     </Container>
   );

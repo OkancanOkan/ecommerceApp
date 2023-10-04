@@ -4,7 +4,7 @@ import './badge.css';
 interface BadgeProps {
   badgeStyleCircle?: boolean;
   text?: string;
-  circleColour?: 'orange' | 'aqua';
+  circleColour?: 'orange' | 'aqua' | 'black';
 }
 const Badge: React.FC<BadgeProps> = ({
   badgeStyleCircle = false,
@@ -16,7 +16,7 @@ const Badge: React.FC<BadgeProps> = ({
       <span
         className={`styled-badge ${
           badgeStyleCircle ? 'circle' : 'square'
-        } colour-${circleColour}`}
+        } colour-${circleColour} `}
       >
         {text}
       </span>

@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-inline: 10px;
   line-height: 15px;
+  min-width: 45px;
 }
 
 .styled-badge.square {
@@ -21,6 +21,8 @@
   line-height: 28px;
   font-weight: 500;
   background-color: black;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .styled-badge.circle {
@@ -45,4 +47,8 @@
 .styled-badge.circle.colour-aqua {
   --tw-bg-opacity: 1;
   background-color: rgb(152 216 202 / var(--tw-bg-opacity));
+}
+
+.styled-badge.circle.colour-black {
+  background-color: black;
 }
