@@ -1,0 +1,36 @@
+.styled-tableCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f4f5f7;
+  font-size: 18px;
+}
+
+.styled-tableCard-productName {
+  min-width: 543px;
+  padding-left: 100px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.styled-tableCard-price {
+  min-width: 183px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.styled-tableCard-quantity {
+  min-width: 259px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.styled-tableCard-total {
+  min-width: 90px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+}

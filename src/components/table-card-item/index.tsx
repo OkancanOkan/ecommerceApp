@@ -8,8 +8,6 @@ interface TableCardItemProps {
   price: string;
   quantity: number;
   total: string;
-  imgWidth: number;
-  imgHeight: number;
 }
 
 const TableCardItem: React.FC<TableCardItemProps> = ({
@@ -18,19 +16,12 @@ const TableCardItem: React.FC<TableCardItemProps> = ({
   price,
   quantity = 0,
   total,
-  imgWidth = 300,
-  imgHeight = 300,
 }) => {
   return (
     <div className="styled-tableCardItem">
       <div className="styled-tableCardItem-leftGroup">
         <a href="" className="styled-tableCardItem-img">
-          <img
-            src={imgSrc}
-            alt="Product Image"
-            width={imgWidth}
-            height={imgHeight}
-          ></img>
+          <img src={imgSrc} alt={productName}></img>
         </a>
         <span className="styled-tableCardItem-productName">{productName}</span>
       </div>

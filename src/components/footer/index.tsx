@@ -73,9 +73,7 @@ const Footer = () => {
           <Hyperlinks text="Policy" path="" />
           <Hyperlinks text="Map" path="" />
         </div>
-        <div className="styled-footer-bottom-logo">
-          <h1 className="styled-navbar-header">Helendo</h1>
-        </div>
+        <h1 className="styled-navbar-header">Helendo</h1>
         <div className="styled-footer-bottom-last">
           <Text size="m" bold colour="black">
             <p>Follow Us On Social</p>
@@ -86,7 +84,6 @@ const Footer = () => {
             <Icon icon={iconTumblr} size={16} onClick={() => {}} />
           </div>
         </div>
-        <div className="styled-footer-bottom-last2"></div>
       </div>
       <div className="styled-footer-copyright">
         <p>© 2023 Helendo. All Rights Reserved.</p>

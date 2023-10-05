@@ -5,8 +5,27 @@ import Footer from '../../components/footer';
 import ProductCard from '../../components/product-card';
 import './home.css';
 import TableCardItem from '../../components/table-card-item';
+import TableCard from '../../components/table-card';
 
 const Home = () => {
+  const tableHeader = [
+    {
+      id: 1,
+      title: 'Product',
+    },
+    {
+      id: 1,
+      title: 'Price',
+    },
+    {
+      id: 1,
+      title: 'Quantity',
+    },
+    {
+      id: 1,
+      title: 'Total',
+    },
+  ];
   // const targetDate = new Date('2024-09-29T00:00:00');
 
   // const tabs = [
@@ -86,9 +105,8 @@ const Home = () => {
           discount={10}
         />
       </div>
+      <TableCard data={[]} header={[tableHeader]} />
       <TableCardItem
-        imgHeight={75}
-        imgWidth={75}
         imgSrc="https://helendo.jamstacktemplates.dev/images/products/dark-green-jug/74x74.jpg"
         productName="Dark Green Jug"
         price="30.00"
