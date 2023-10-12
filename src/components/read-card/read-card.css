@@ -1,0 +1,18 @@
+.styled-readCard{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 375px;
+height: auto;
+}
+
+.styled-readCard-title{
+    display: inline-flex;
+    width: 100%;
+}
+
+.styled-readCard-breadcrumb{
+display: flex;
+margin:0;
+justify-content: flex-start;
+}

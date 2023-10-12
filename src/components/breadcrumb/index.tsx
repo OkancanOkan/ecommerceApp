@@ -7,8 +7,8 @@ interface BreadcrumbProps {
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   return (
-    <div aria-label="Breadcrumb">
-      <ul className="styled-breadcrumb">
+    <div className='styled-breadcrumb'>
+      <ul className="styled-breadcrumb-ul">
         {items.map((item, index) => (
           <li className="styled-breadcrumb-item" key={index}>
             {item.link ? (

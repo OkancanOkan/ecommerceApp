@@ -1,15 +1,18 @@
 .styled-breadcrumb {
   display: flex;
-  justify-content: flex-end;
-  text-transform: uppercase;
+  justify-content: flex-start;
   font-size: 14px;
+}
+
+.styled-breadcrumb-ul{
+  display: flex;
   list-style: none;
+  padding: 0;
+
 }
 
 .styled-breadcrumb-item {
-  position: relative;
   display: list-item;
-  text-align: -webkit-match-parent;
 }
 
 .styled-breadcrumb-item a {
@@ -20,12 +23,6 @@
   cursor: pointer;
 }
 
-.styled-breadcrumb-item a::after {
-  --tw-content: '/';
-  content: var(--tw-content);
-  padding-right: 15px;
-  margin-left: 15px;
-}
 
 .styled-breadcrumb-item span {
   --tw-text-opacity: 1;

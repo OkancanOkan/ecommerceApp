@@ -2,7 +2,7 @@ import React from 'react';
 import Text from '../text';
 import Breadcrumb from '../breadcrumb';
 import { Button } from '../button';
-import './read-big-card.css';
+import './read-bigCard.css';
 
 interface ReadBigCardProps {
   children: React.ReactNode;
@@ -29,7 +29,7 @@ const ReadBigCard: React.FC<ReadBigCardProps> = ({
           </Text>
         </div>
         <div className="styled-ReadBigCard-spesifiction-breadcrumb">
-          <Breadcrumb items={[{label: "November 27, 2023/"},{label: "Admin/" },{label: "in deco" }]} />
+          <Breadcrumb items={[{label: "November 27, 2023 / "},{label: " Admin / " },{label: "in deco" }]} />
         </div>
         {children}
         <div className="styled-ReadBigCard-spesipfication-button">

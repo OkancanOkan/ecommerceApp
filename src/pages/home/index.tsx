@@ -10,6 +10,7 @@ import TitleLinks from '../../components/title-links';
 import CartCard from '../../components/cart-card';
 import ReadProduct from '../../components/read-product';
 import ReadBigCard from '../../components/read-big-card';
+import ReadCard from '../../components/read-card';
 
 const Home = () => {
   const tableHeader = [
@@ -173,6 +174,7 @@ const Home = () => {
           who fail in…
         </p>} imgSrc={'	https://helendo.jamstacktemplates.dev/images/blogs/unique-products/1146x745.jpg'} productTitle='Unique products that will impress your home in 2023.' buttonLabel={'Read More'}      />
 
+<ReadCard imgSrc='https://helendo.jamstacktemplates.dev/images/blogs/unique-products/374x243.jpg' productTitle='Unique products that will impress your home in 2023.' />
       <Footer />
     </Container>
   );

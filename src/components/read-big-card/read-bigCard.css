@@ -1,0 +1,35 @@
+.styled-ReadBigCard {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.styled-ReadBigCard-img {
+  display: flex;
+  justify-content: center;
+}
+
+.styled-ReadBigCard-spesifiction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.styled-ReadBigCard-spesifiction-header {
+  display: flex;
+  justify-content: center;
+}
+
+.styled-ReadBigCard-spesifiction-breadcrumb {
+  display: flex;
+
+  justify-content: center;
+}
+
+.styled-ReadBigCard-spesifiction-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
