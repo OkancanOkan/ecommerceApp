@@ -2,20 +2,36 @@ import React from 'react';
 import './table-card.css';
 import TableCardItem from '../table-card-item';
 
+
 interface TableCardProps {
-  header: [];
-  data: [];
+  header: TableHeaderProps[] 
+  data: TableDataProps[];
+}
+interface TableDataProps{
+  imgSrc:string,
+  productName:string,
+  price:string,
+  quantity:number,
+  total:string
 }
 
+interface TableHeaderProps{
+  id:number,
+  title:string,
+  fieldName :string,
+}
 const TableCard: React.FC<TableCardProps> = ({ header, data }) => {
-  return (
+
+  
+  return (    
+    <>
     <div className="styled-tableCard">
-      <div className="styled-tableCard-productName">productName</div>
-      <div className="styled-tableCard-price">Price</div>
-      <div className="styled-tableCard-quantity">Quantity</div>
-      <div className="styled-tableCard-total">Total</div>
-      {data.map((item, index) => (
-        <div key={index} className="styled-tableCard-item">
+      {header.map((item)=>(
+        <div className="styled-tableCard-header">{item.title}</div> 
+      ))}
+    </div>
+        <div className="styled-tableCard-item">
+      {data.map((item) => ( 
           <TableCardItem
             imgSrc={item.imgSrc}
             productName={item.productName}
@@ -23,9 +39,10 @@ const TableCard: React.FC<TableCardProps> = ({ header, data }) => {
             quantity={item.quantity}
             total={item.total}
           />
-        </div>
       ))}
-    </div>
+        </div>
+    </>
+
   );
 };
 

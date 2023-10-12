@@ -2,7 +2,7 @@ import React from 'react';
 import './title-line.css';
 
 interface TitleLineProps {
-  text?: string;
+  text: string;
   href?: string;
   offer?: boolean;
   spanText?: string;

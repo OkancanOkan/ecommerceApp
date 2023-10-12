@@ -11,7 +11,7 @@ interface TextProps {
 const Text: React.FC<TextProps> = ({
   children,
   size,
-  colour,
+  colour="black",
   bold = false,
 }) => {
   return (

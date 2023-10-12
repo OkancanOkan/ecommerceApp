@@ -6,24 +6,59 @@ import ProductCard from '../../components/product-card';
 import './home.css';
 import TableCardItem from '../../components/table-card-item';
 import TableCard from '../../components/table-card';
+import TitleLinks from '../../components/title-links';
+import CartCard from '../../components/cart-card';
+import ReadProduct from '../../components/read-product';
+import ReadBigCard from '../../components/read-big-card';
 
 const Home = () => {
   const tableHeader = [
     {
       id: 1,
+      title: '',
+      fieldName: 'imgSrc',
+    },
+
+    {
+      id: 2,
       title: 'Product',
+      fieldName: 'productName',
     },
     {
-      id: 1,
+      id: 3,
       title: 'Price',
+      fieldName: 'price',
     },
     {
-      id: 1,
+      id: 4,
       title: 'Quantity',
+      fieldName: 'quantity',
     },
     {
-      id: 1,
+      id: 5,
       title: 'Total',
+      fieldName: 'total',
+    },
+  ];
+
+  const tableData = [
+    {
+      id: 1,
+      productName: 'Art Deco Home',
+      imgSrc:
+        'https://helendo.jamstacktemplates.dev/images/products/art-deco-home/74x74.jpg',
+      price: '30.00',
+      quantity: 1,
+      total: '30.00',
+    },
+    {
+      id: 2,
+      productName: 'Art Deco Home',
+      imgSrc:
+        'https://helendo.jamstacktemplates.dev/images/products/art-deco-home/74x74.jpg',
+      price: '30.00',
+      quantity: 1,
+      total: '30.00',
     },
   ];
   // const targetDate = new Date('2024-09-29T00:00:00');
@@ -105,14 +140,39 @@ const Home = () => {
           discount={10}
         />
       </div>
-      <TableCard data={[]} header={[tableHeader]} />
-      <TableCardItem
-        imgSrc="https://helendo.jamstacktemplates.dev/images/products/dark-green-jug/74x74.jpg"
-        productName="Dark Green Jug"
+      <TableCard data={tableData} header={tableHeader} />
+      <br />
+      <br />
+      <CartCard
         price="30.00"
-        quantity={1}
-        total="30.00"
+        qty={5}
+        productName="Art Deco Home"
+        imgSrc="https://helendo.jamstacktemplates.dev/images/products/art-deco-home/74x74.jpg"
       />
+      <ReadProduct
+        imgSrc={
+          'https://helendo.jamstacktemplates.dev/images/featured-product/nancy-chair.png'
+        }
+        productName={'Nancy Chair'}
+        price={'90.00'}
+        children={
+          <p>
+            When an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia.
+          </p>
+        }
+      />
+
+      <ReadBigCard
+        children={<p>
+          Contrary to popular belief, Lorem Ipsum indignation and dislike men
+          who are so beguiled and demoralized by the charms of pleasure of the
+          moment, so blinded by desire, that they cannot foresee the pain and
+          trouble that are bound to ensue; and equal blame belongs to those
+          who fail in…
+        </p>} imgSrc={'	https://helendo.jamstacktemplates.dev/images/blogs/unique-products/1146x745.jpg'} productTitle='Unique products that will impress your home in 2023.' buttonLabel={'Read More'}      />
+
       <Footer />
     </Container>
   );

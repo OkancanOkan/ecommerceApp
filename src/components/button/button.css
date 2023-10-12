@@ -33,16 +33,20 @@
 .styled-button.size-small {
   font-weight: 500;
   height: 32px;
+  font-size:12px
 }
 
 .styled-button.size-medium {
   height: 40px;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .styled-button.size-large {
   height: 48px;
   font-weight: 700;
+  font-size: 16px;
+
 }
 
 .styled-button-icon {
