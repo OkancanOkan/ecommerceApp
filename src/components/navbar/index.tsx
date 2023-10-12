@@ -8,6 +8,7 @@ import iconFavorites from '../../assets/icons/favorite.svg';
 import iconShopping from '../../assets/icons/shopping.svg';
 import iconHamburger from '../../assets/icons/hamburger.svg';
 import iconClose from '../../assets/icons/close.svg';
+import Sidebar from '../sidebar';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,11 +47,12 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className="styled-navbar-iconGroup-hamburger-menü">
-          <div className="styled-navbar-iconGroup-hamburger-menü-inner">
-            <Icon icon={iconClose} size={25} onClick={() => {}} />
-          </div>
-        </div>
+        <Sidebar/>
+        // <div className="styled-navbar-iconGroup-hamburger-menü">
+        //   <div className="styled-navbar-iconGroup-hamburger-menü-inner">
+        //     <Icon icon={iconClose} size={25} onClick={() => {}} />
+        //   </div>
+        // </div>
       )}
     </div>
   );
